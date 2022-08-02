@@ -1,0 +1,36 @@
+{
+	"scripts": {
+		"clean": "rm assets/public",
+		"prettier": "prettier --check",
+		"prettier:format": "prettier --write .",
+		"dev": "webpack --config webpack/development.config.js --env NODE_ENV=development",
+		"dev:watch": "webpack --config webpack/development.config.js --watch --env NODE_ENV=development",
+		"prod": "webpack --config webpack/production.config.js --env NODE_ENV=production --env production",
+		"prod:watch": "webpack --config webpack/production.config.js --watch --env NODE_ENV=production --env production",
+		"translate": "wp-pot --src 'src/**/**/**/**/**/**/*.php' --dest-file 'languages/wordpress-webpack.pot' --package 'best4u' --domain 'best4u'"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.16.12",
+		"@babel/preset-env": "^7.16.11",
+		"@prettier/plugin-php": "^0.17.6",
+		"autoprefixer": "^10.4.2",
+		"babel-loader": "^8.2.3",
+		"copy-webpack-plugin": "^10.2.2",
+		"css-loader": "^6.5.1",
+		"eslint": "^8.7.0",
+		"eslint-config-prettier": "^8.3.0",
+		"mini-css-extract-plugin": "^2.5.3",
+		"node-sass": "^7.0.1",
+		"node-sass-magic-importer": "^5.3.2",
+		"postcss-loader": "^6.2.1",
+		"prettier": "^2.5.1",
+		"sass-loader": "^12.4.0",
+		"style-loader": "^3.3.1",
+		"webpack": "^5.67.0",
+		"webpack-cli": "^4.9.2",
+		"wp-pot-cli": "^1.5.0"
+	},
+	"dependencies": {
+		"@fancyapps/ui": "^4.0.22"
+	}
+}
