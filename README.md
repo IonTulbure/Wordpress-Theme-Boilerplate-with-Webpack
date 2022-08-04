@@ -1,1 +1,1 @@
-# Wordpress-Theme-Boilerplate-with-Webpack
+# Wordpress Theme Boilerplate with Webpack
